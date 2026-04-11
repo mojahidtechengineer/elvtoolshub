@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mojahid Tech Engineer | ELV Tools</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg: #f8fafc;
+            --card-bg: #ffffff;
+            --text-main: #1e293b;
+            --text-muted: #64748b;
+            --accent: #2563eb;
+            --border: #e2e8f0;
+        }
+
+        body { font-family: 'Inter', sans-serif; background-color: var(--bg); color: var(--text-main); margin: 0; min-height: 100vh; display: flex; flex-direction: column; }
+
+        /* Navigation / Contact Bar */
+        .top-nav { padding: 20px 40px; display: flex; justify-content: space-between; align-items: center; background: white; border-bottom: 1px solid var(--border); }
+        .contact-links a { color: var(--text-muted); text-decoration: none; font-size: 0.9rem; font-weight: 500; margin-left: 20px; transition: color 0.2s; }
+        .contact-links a:hover { color: var(--accent); }
+
+        header { padding: 60px 20px; text-align: center; }
+        header h1 { font-size: 2.2rem; color: #0f172a; margin: 0; }
+
+        .container { max-width: 900px; margin: 0 auto 60px auto; padding: 0 20px; display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 24px; }
+
+        .tool-card { background: var(--card-bg); padding: 25px; border-radius: 12px; border: 1px solid var(--border); transition: 0.3s; }
+        .tool-card:hover { border-color: var(--accent); box-shadow: 0 10px 15px -3px rgba(0,0,0,0.05); }
+        .tool-card h3 { margin-top: 0; color: var(--accent); }
+        .btn-link { display: inline-block; padding: 10px 20px; background: var(--accent); color: white; text-decoration: none; border-radius: 6px; font-weight: 600; font-size: 0.85rem; }
+
+        footer { margin-top: auto; padding: 40px; text-align: center; border-top: 1px solid var(--border); background: white; }
+    </style>
+</head>
+<body>
+
+<nav class="top-nav">
+    <strong>Mojahid Tech Engineer</strong>
+    <div class="contact-links">
+        <a href="https://www.youtube.com/@mojahidtechengineer" target="_blank">YouTube</a>
+        <a href="https://wa.me/918825169484" target="_blank">WhatsApp: +91 8825169484</a>
+    </div>
+</nav>
+
+<header>
+    <h1>ELV Engineering Resource Center</h1>
+    <p>Professional tools and calculators for your daily projects.</p>
+</header>
+
+<main class="container">
+    <div class="tool-card">
+        <h3>Disk Calculator</h3>
+        <p>Estimate storage needs for CCTV recording.</p>
+        <a href="#" class="btn-link">Launch Tool</a>
+    </div>
+    <div class="tool-card">
+        <h3>UPS Calculator</h3>
+        <p>Sizing for ELV systems and server racks.</p>
+        <a href="#" class="btn-link">Launch Tool</a>
+    </div>
+</main>
+
+<footer>
+    <p>Designed by <strong>Mojahid Tech Engineer</strong> | Dedicated to the ELV Community.</p>
+</footer>
+
+</body>
+</html>
