@@ -4,6 +4,23 @@
 
     <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 <script>
+// Disable right-click
+document.addEventListener('contextmenu', e => e.preventDefault());
+
+// Block common keyboard shortcuts
+document.addEventListener('keydown', e => {
+  if (
+    e.key === 'F12' ||
+    (e.ctrlKey && e.shiftKey && e.key === 'I') || // DevTools
+    (e.ctrlKey && e.shiftKey && e.key === 'J') || // Console
+    (e.ctrlKey && e.key === 'u') ||               // View Source
+    (e.ctrlKey && e.key === 's')                  // Save
+  ) {
+    e.preventDefault();
+  }
+});
+    
+    
   // ⚠️ REPLACE THESE TWO VALUES
   const SUPABASE_URL = 'https://qwfrysqtbaazcbvpokik.supabase.co';
   const SUPABASE_ANON_KEY = 'sb_publishable_PdoMU06siFaUFJv8zwQ7nQ_Kgmg3wiU';
