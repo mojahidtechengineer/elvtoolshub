@@ -1,6 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script>
+  // ⚠️ REPLACE THESE TWO VALUES
+  const SUPABASE_URL = 'https://qwfrysqtbaazcbvpokik.supabase.co';
+  const SUPABASE_ANON_KEY = '';
+
+  const { createClient } = supabase;
+  const _supabase = createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
+
+  (async () => {
+    const { data: { session } } = await _supabase.auth.getSession();
+    if (!session) {
+      window.location.href = 'login.html'; // not logged in → redirect
+    }
+  })();
+</script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mojahid Tech Engineer | ELV Tools</title>
